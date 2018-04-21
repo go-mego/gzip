@@ -28,8 +28,8 @@ import (
 )
 
 func main() {
-    m := mego.New()
-    // 將 Gzip 壓縮技術套用到全域路由上。
+	m := mego.New()
+	// 將 Gzip 壓縮技術套用到全域路由上。
 	m.Use(gzip.New())
 	m.Run()
 }
